@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #22254b;
+    
+}
+.logo{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #373c75;
+    border-radius: 5px;
+}
+
+header{
+    background-color: #373b69;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo, #search_res, #total_records{
+    font-size: 25px;
+    font-family: 600;
+    color: #ddd;
+    padding: 0 15px;
+    
+}
+
+#search_res{
+    margin-top: 20px;
+}
+
+#total_records{
+    font-weight: 100;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.search{
+    background-color: transparent;
+    border: 2px solid #22254b;
+    border-radius: 50px;
+    color: #fff;
+    outline: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.search::placeholder{
+    color: #7378c5;
+}
+
+.search:focus{
+    background-color: #22254b;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.movie{
+    width: 300px;
+    background-color: #373b69;
+    border-radius: 3px;
+    margin: 2.5%;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+    
+}
+
+.movie img {
+    width: 100%;
+}
+
+.movie-info{
+    color: #eee;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    letter-spacing: 1px;
+}
+
+.movie-info h3{
+    margin: 0;
+}
+
+.movie-info span {
+    background-color: #22254b;
+    border-radius: 3px;
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+}
+
+.movie-info span.green {
+    color: #24D876;
+}
+
+.movie-info span.orange {
+    color: #d88824;
+}
+
+.movie-info span.red {
+    color: #d82424;
+}
